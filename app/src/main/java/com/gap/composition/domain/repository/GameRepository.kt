@@ -8,7 +8,7 @@ interface GameRepository {
 
     fun generateQuestion(
         maxSumValue: Int, // значение числа, котрого будут отгадывать
-        countOfOptions: Int // Колличество ответов
+        countOfOptions: Int // Колличество видимых ответов
     ): Question
 
     fun getGameSettings(level: Level): GameSettings
