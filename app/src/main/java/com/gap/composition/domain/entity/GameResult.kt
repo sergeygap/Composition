@@ -9,4 +9,7 @@ data class GameResult(
     val countOfRightAnswers: Int, // Количетво правильных ответоа
     val countOfQuestions: Int, // Общее колличество вопросов на которые ответил игрок, можно определить, какой правильный процент был у игрока
     val gameSettings: GameSettings, // для того, чтобы узнать какой минмальное колличество правльных ответов должно было быть
-) : Parcelable
+) : Parcelable {
+    val countOfRightAnswersString: String
+        get() = countOfRightAnswers.toString()
+}
